@@ -12,11 +12,13 @@ RSpec.describe 'Navbar' do
         click_on("About")
         expect(current_path).to eq("/about")
 
-        click_on("Genres")
-        click_on("Action")
+        click_on("Photos")
+
+        click_on("Landscapes")
+        expect(page).to have_current_path(photos_path(genre: 'landscape'))
+
+        
       end
-      # expect(page).to have_content('Dani Coleman - Through the Lens of Light')
-      # expect(page).to have_content("Here is how I see the world and its infinite vastness!")
     end
   end
 end
