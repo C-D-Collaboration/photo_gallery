@@ -17,10 +17,22 @@
 .navbar {
   opacity: 0.45;
   button {
-    background-color: lightskyblue;
+    background-color: blue;
   }
 }
 
-.navbar-brand {
-  forced-color-adjust: aqua;
+.home {
+  color: blue !important;
+}
+
+.about {
+  color: blue !important;
+}
+
+.photos {
+  color: blue !important;
+}
+
+.dropdown-menu {
+  color: blue !important;
 }
