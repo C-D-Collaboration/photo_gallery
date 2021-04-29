@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 <!-- Add image for home button -->
   <a class="navbar-brand" href="/">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,11 +15,10 @@
           Photos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <!-- <a class="dropdown-item" href="#">Landscapes</a> -->
           <%= link_to 'Landscapes', photos_path(genre: "landscape"), class: "dropdown-item"%>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <%= link_to 'People', photos_path(genre: "people"), class: "dropdown-item"%>
+          <%= link_to 'Space', photos_path(genre: "space"), class: "dropdown-item"%>
+          <%= link_to 'Sunsets', photos_path(genre: "sunset"), class: "dropdown-item"%>
         </div>
       </li>
     </ul>
