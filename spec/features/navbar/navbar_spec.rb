@@ -17,7 +17,14 @@ RSpec.describe 'Navbar' do
         click_on("Landscapes")
         expect(page).to have_current_path(photos_path(genre: 'landscape'))
 
-        
+        click_on("People")
+        expect(page).to have_current_path(photos_path(genre: 'people'))
+
+        click_on("Space")
+        expect(page).to have_current_path(photos_path(genre: 'space'))
+
+        click_on("Sunsets")
+        expect(page).to have_current_path(photos_path(genre: 'sunset'))
       end
     end
   end
