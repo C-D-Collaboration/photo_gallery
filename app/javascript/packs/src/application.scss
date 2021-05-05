@@ -24,3 +24,38 @@
 .navbar-brand {
   forced-color-adjust: aqua;
 }
+
+.index-images {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.pad-25-bottom {
+  padding-bottom: 25px;
+}
+.pad-25-top {
+  padding-top: 25px;
+}
+.pad-15-top {
+  padding-top: 15px;
+}
+.pad-25-right {
+  padding-right: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.home {
+  color: blue !important;
+}
+
+.about {
+  color: blue !important
+}
+.photos {
+  color: blue !important
+}
