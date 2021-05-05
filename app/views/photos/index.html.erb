@@ -1,5 +1,21 @@
+  <% if @photos.first.genre == "space" %>
+    <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize %></h3>
+  <% else %>
+    <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize.pluralize %></h3>
+  <% end %>
+
 <% @photos.each do |photo| %>
-  <%= photo.title %>
-  <%= photo.description %>
-  <%= image_tag("#{photo.url}", :alt => "Picture missing") %>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm pad-25-bottom pad-25-top pad-25-right">
+        <div class="index-images">
+          <%= image_tag("#{photo.url}", :alt => "Picture missing") %>
+        </div>
+        <div class="photo-index-title pad-15-top">
+          <%= photo.title %>
+        </div>
+      </div>
+    </div> 
+  </div>
 <% end %>
+
