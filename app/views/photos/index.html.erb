@@ -1,9 +1,8 @@
-  <% if @photos.first.genre == "space" %>
-    <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize %></h3>
-  <% else %>
-    <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize.pluralize %></h3>
-  <% end %>
-
+<% if @photos.first.genre == "space" %>
+  <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize %></h3>
+<% else %>
+  <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize.pluralize %></h3>
+<% end %>
 <% @photos.each do |photo| %>
   <div class="container">
     <div class="row">
@@ -15,7 +14,6 @@
           <%= photo.title %>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
 <% end %>
-
