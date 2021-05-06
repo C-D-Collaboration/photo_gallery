@@ -1,7 +1,7 @@
 <% if @photos.first.genre == "space" %>
-  <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize %></h3>
+  <h2 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize %></h2>
 <% else %>
-  <h3 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize.pluralize %></h3>
+  <h2 class="center pad-25-bottom pad-25-top"><%= @photos.first.genre.capitalize.pluralize %></h2>
 <% end %>
 
 <div class="container">
