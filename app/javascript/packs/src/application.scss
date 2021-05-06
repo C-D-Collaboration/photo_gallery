@@ -14,24 +14,33 @@
   }
 }
 
+//putting a dark overlay on background images
+.image-wrapper:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+}
+
 .navbar {
   z-index: 10;
   opacity: 0.45;
   button {
-    background-color: lightskyblue;
+    background-color: white;
   }
 }
 
 .home {
-  color: blue !important;
+  color: white !important;
 }
 
 .about {
-  color: blue !important
+  color: white !important
 }
 
 .photos {
-  color: blue !important
+  color: white !important
 }
 
 .index-images {
@@ -41,9 +50,14 @@
   }
 }
 
+h2 {
+  color: white;
+}
+
 .photo-index-title {
   text-align: center;
   padding-top: 10px;
+  color: white;
 }
 
 .pad-25-bottom {
