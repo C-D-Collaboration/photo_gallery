@@ -31,6 +31,9 @@ RSpec.describe 'Navbar' do
 
         click_on("Sunsets")
         expect(page).to have_current_path(photos_path(genre: 'sunset'))
+
+        click_on("Contact")
+        expect(current_path).to eq(contact_path)
       end
     end
   end
