@@ -1,4 +1,29 @@
-<h1>Contact</h1>
-<p>Have a question?</p>
-<p>Please don't hesitate to reach out for any reason!</p>
-<p>email: danicoleman00@gmail.com</p>
+<div class="container">
+  <div style="text-align:center">
+    <h1>Contact</h1>
+    <p>Have a question?</p>
+    <p>Please don't hesitate to reach out for any reason or just fill out the form and hit "submit".</p>
+    <p>email: danicoleman00@gmail.com</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/assets/giraffe.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <!--Need to create a route for the form;-->
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="Your email">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Write something.."></input>
+        <label for="message">Message</label>
+        <textarea id="message" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
