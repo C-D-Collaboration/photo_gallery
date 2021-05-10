@@ -10,6 +10,7 @@ RSpec.describe 'Navbar' do
       @people1 = Photo.create!(title: "Beautiful young girl", description: "Look at dem eyes", genre: "people", url: 'https://mymodernmet.com/wp/wp-content/uploads/2018/10/Mou-Aysha-portrait-photography-3.jpg')
       @sunset1 = Photo.create!(title: "Ocean Sunset", description: "Look at dat surf", genre: "sunset", url: 'https://llandscapes-10674.kxcdn.com/wp-content/uploads/2015/01/6198521760_aa86027669_z.jpg')
     end
+    
     it "can see the navbar and its links" do
       within '.navbar' do
         click_on("Home")
