@@ -54,7 +54,19 @@
 }
 
 h2 {
+  font-family: europa;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 3em;
+  letter-spacing: .3em;
   color: white;
+}
+
+.welcome-header {
+  font-family: europa;
+  font-style: bold;
+  letter-spacing: .3em;
+  font-weight: 200!important;
 }
 
 .photo-index-title {
@@ -140,7 +152,7 @@ input[type=submit]:hover {
 }
 
 /* Style the container/contact section */
-.container {
+.contact-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
