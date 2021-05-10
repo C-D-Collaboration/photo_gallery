@@ -13,10 +13,10 @@ RSpec.describe 'Navbar' do
     it "can see the navbar and its links" do
       within '.navbar' do
         click_on("Home")
-        expect(current_path).to eq("/")
+        expect(current_path).to eq(root_path)
 
         click_on("About")
-        expect(current_path).to eq("/about")
+        expect(current_path).to eq(about_path)
 
         click_on("Photos")
 
