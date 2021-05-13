@@ -11,9 +11,29 @@
     </div>
     <div class="column">
       <!--currently routing back to contact page. Need to add a flash message;-->
-      <form action="/contact">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <%= form_tag '/contact', method: :post do %>
+        <div class="form-group">
+          <%= text_field_tag :first_name, nil, class:"form-control", placeholder: "First Name" %>
+        </div>
+        <div class="form-group">
+          <%= text_field_tag :last_name, nil, class:"form-control", placeholder: "Last Name" %>
+        </div>
+        <div class="form-group">
+          <%= text_field_tag :email, nil, class:"form-control", placeholder: "Your Email" %>
+        </div>
+        <div class="form-group">
+          <%= text_field_tag :subject, nil, class:"form-control", placeholder: "Subject" %>
+        </div>
+        <div class="form-group">
+          <%= text_field_tag :message, nil, class:"form-control", placeholder: "Message" %>
+        </div>
+        <div class="col-auto my-1">
+          <%= submit_tag "Submit", class:"btn btn-primary" %>
+        </div>
+      <% end %>
+      <!-- <form action="/contact" method: :post>
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         <label for="email">Email Address</label>
@@ -23,7 +43,7 @@
         <label for="message">Message</label>
         <textarea id="message" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
-      </form>
+      </form> -->
     </div>
   </div>
 </div>
