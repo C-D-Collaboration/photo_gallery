@@ -5,13 +5,13 @@
   </head>
   <body>
     <!-- Add .full_name to line 8 -->
-    <p>You got a new message from <%= @contact.first_name %> <%= @contact.last_name %>!</p>
+    <p>You got a new message from <%= @contact.full_name %>!</p>
     <p>
     Message details<br>
     --------------------------
     </p>
-    <p>Name: <%= @contact.first_name %></p>
-    <p>Name: <%= @contact.last_name %></p>
+    <p>First Name: <%= @contact.first_name %></p>
+    <p>Last Name: <%= @contact.last_name %></p>
     <p>Email: <%= @contact.email %></p>
     <p>
     Message:<br>
