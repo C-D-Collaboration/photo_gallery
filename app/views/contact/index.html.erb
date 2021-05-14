@@ -3,7 +3,7 @@
     <h1>Contact</h1>
     <p>Have a question?</p>
     <p>Please don't hesitate to reach out for any reason or just fill out the form and hit 'submit'.</p>
-    <p>email: danicoleman00@gmail.com</p>
+    <p>email: danicolemanphotography@gmail.com</p>
   </div>
   <div class="row">
     <div class="column">
@@ -11,7 +11,7 @@
     </div>
     <div class="column">
       <!--currently routing back to contact page. Need to add a flash message;-->
-      <%= form_tag '/contact', method: :post do %>
+      <%= form_tag '/contact', method: :post, remote: true do %>
         <div class="form-group">
           <%= text_field_tag :first_name, nil, class:"form-control", placeholder: "First Name" %>
         </div>
