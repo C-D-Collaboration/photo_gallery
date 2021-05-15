@@ -1,8 +1,6 @@
 class ContactMailer < ApplicationMailer
-  def new_contact_email
-    @contact = params[:contact]
-
-    #make this an environment variable
-    mail(to: 'danicolemanphotography@gmail.com', subject: params[:subject])
+  def new_contact_email(contact)
+    @contact = contact
+    mail(to: ENV['GMAIL_USERNAME'], subject: contact.subject, from: contact.email)
   end
 end
