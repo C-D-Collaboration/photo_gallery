@@ -10,22 +10,21 @@
       <img src="/assets/giraffe.jpg" style="width:100%">
     </div>
     <div class="column">
-      <!--currently routing back to contact page. Need to add a flash message;-->
-      <%= form_tag '/contact', method: :post, remote: true do %>
+      <%= form_tag contact_path, method: :post, remote: true do %>
         <div class="form-group">
-          <%= text_field_tag :first_name, nil, class:"form-control", placeholder: "First Name" %>
+          <%= text_field_tag :first_name, nil, class:"form-control", placeholder: "First Name", required: true %>
         </div>
         <div class="form-group">
           <%= text_field_tag :last_name, nil, class:"form-control", placeholder: "Last Name" %>
         </div>
         <div class="form-group">
-          <%= text_field_tag :email, nil, class:"form-control", placeholder: "Your Email" %>
+          <%= email_field_tag :email, nil, class:"form-control", placeholder: "Your Email", required: true %>
         </div>
         <div class="form-group">
-          <%= text_field_tag :subject, nil, class:"form-control", placeholder: "Subject" %>
+          <%= text_field_tag :subject, nil, class:"form-control", placeholder: "Subject", required: true %>
         </div>
         <div class="form-group">
-          <%= text_field_tag :message, nil, class:"form-control", placeholder: "Message" %>
+          <%= text_field_tag :message, nil, class:"form-control", placeholder: "Message", required: true %>
         </div>
         <div class="col-auto my-1">
           <%= submit_tag "Submit", class:"btn btn-primary" %>
