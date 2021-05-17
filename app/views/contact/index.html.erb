@@ -10,7 +10,7 @@
       <img src="/assets/giraffe.jpg" style="width:100%">
     </div>
     <div class="column">
-      <%= form_tag contact_path, method: :post, remote: true do %>
+      <%= form_tag mail_path, method: :post, remote: true do %>
         <div class="form-group">
           <%= text_field_tag :first_name, nil, class:"form-control", placeholder: "First Name", required: true %>
         </div>
