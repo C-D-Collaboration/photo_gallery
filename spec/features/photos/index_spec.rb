@@ -22,6 +22,7 @@ RSpec.describe 'Photo Index Page' do
         expect(page).to have_xpath("//img[contains(@src,'#{@landscape1.url}')]")
       end
     end
+
     it "can visit landscapes index page and not find other genres" do
       click_on("Landscapes")
 
@@ -35,6 +36,7 @@ RSpec.describe 'Photo Index Page' do
         expect(page).to_not have_xpath("//img[contains(@src,'#{@sunset1.url}')]")
       end
     end
+    
     it "can visit landscapes index page and find a title for each photo" do
       click_on("Landscapes")
 
