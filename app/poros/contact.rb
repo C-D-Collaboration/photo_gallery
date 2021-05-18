@@ -5,7 +5,7 @@ class Contact
               :subject,
               :message,
               :full_name
-              
+
   def initialize(info)
     @first_name = info[:first_name]# :first_name
     @last_name = info[:last_name]# :last_name
